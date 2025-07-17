@@ -1,95 +1,50 @@
-# Mini Scheme to Kirundi Interpreter  
+# RundiInterpreter
 
-Welcome to the **Mini Scheme to Kirundi Interpreter** project! 🚀  
-This project begins as a **Mini Scheme interpreter** and will evolve into a **new programming language in Kirundi**.  
-It is implemented in **Rust** for now, but may undergo changes and adaptations as it progresses.  
+RundiInterpreter is a simple interpreter written in Rust. It is designed to parse and evaluate expressions, providing a REPL (Read-Eval-Print Loop) for interactive use.
 
----
+## Overview
 
-## 📌 Project Goals  
+This project consists of several modules that handle different aspects of the interpreter:
 
-1. **Phase 1:** Develop a simple **Scheme interpreter** (minimal Lisp-like language).  
-2. **Phase 2:** Extend and modify the interpreter to create a **Kirundi-based programming language**.  
-3. **Phase 3:** Optimize and improve the language for real-world usage.  
+- **Tokenizer**: Breaks source code into tokens.
+- **Parser**: Parses tokens into an abstract syntax tree (AST).
+- **Evaluator**: Executes the AST.
+- **Environment**: Manages variable scopes.
+- **REPL**: Provides an interactive command-line interface.
+- **Error Handling**: Defines and manages errors that occur during interpretation.
+- **Abstract Syntax Tree (AST)**: Represents the structure of parsed expressions.
 
----
+## Installation
 
-## 🔧 Technologies  
+To build and run the project, ensure you have Rust and Cargo installed. You can install Rust by following the instructions at [rust-lang.org](https://www.rust-lang.org/tools/install).
 
-- **Rust** 🦀 (for performance, safety, and concurrency)  
-- **Scheme** (initial parsing and evaluation logic)  
-- **Kirundi** (for language adaptation)  
+Clone the repository:
 
----
-
-## 📂 Project Structure  
-
-├── 📜 README.md# Project documentation 
-├── 📜 Cargo.toml # Rust dependencies 
-├── 📂 src # Rust source code 
-  │ 
-  ├── main.rs # Entry point 
-  │ 
-  ├── parser.rs # Scheme/Kirundi parser 
-  │ 
-  ├── evaluator.rs # Expression evaluation 
-  ├── environment.rs #Environemt configuration
-  ├── reader.rs #For REPL implementation
-  ├── kirundi.rs # Kirundi language adaptation (future) 
-  │
-  └── utils.rs # Utility functions 
-  └── 📂 tests # Unit and integration tests
-     ├──integration_tests.rs #integration tests
-
-
-
-## 🚀 Getting Started  
-### 1️⃣ Prerequisites  
-Ensure you have **Rust** installed:  
-
-```sh
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh
 ```
-
-## Cloning repo
-git clone https://github.com/tharcissentirandekura/RundiInterpreter.git.git
-```sh
+git clone <repository-url>
 cd RundiInterpreter
 ```
-## Building the project
+
+Then, build the project:
+
 ```
 cargo build
 ```
-## running
+
+## Usage
+
+To run the interpreter, execute the following command:
+
 ```
 cargo run
 ```
 
-## 🏗️ Features
-✅ Scheme-like syntax support
-✅ Basic arithmetic & logical operations
-✅ Lambda functions & closures
-🚧 Kirundi language syntax support (in progress)
-🚧 Error handling & debugging tools
+This will start the REPL, where you can enter expressions to be evaluated.
 
-## 🛠️ Contribution
-Contributions are welcome! 🎉
-### To contribute:
+## Contributing
 
-  Fork the repository 🍴
-  Create a new branch: git checkout -b feature-name
-  Commit your changes: git commit -m "Add feature"
-  Push to the branch: git push origin feature-name
-  Open a Pull Request 🔥
+Contributions are welcome! Please open an issue or submit a pull request for any enhancements or bug fixes.
 
+## License
 
-## 📜 License
-This project is licensed under the ``MIT`` License.
-Feel free to use, modify, and distribute it.
-
-## 📞 Contact
-For questions, feedback, or ideas, reach out:
-📧 Email: tharcissentira@gamil.com
-📂 GitHub: tharcissentirandekura
-
-
+This project is licensed under the MIT License. See the LICENSE file for more details.
